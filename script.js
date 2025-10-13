@@ -97,7 +97,7 @@ if (contactForm) {
         emailjs.send('service_u01nbus', 'Template_Abdul', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-                alert('Thank you for your message! I will get back to you soon.');
+                alert('Abdul Majeed Mohammed says: Thank you for your message! I will get back to you soon.');
                 contactForm.reset();
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
