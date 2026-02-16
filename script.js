@@ -166,7 +166,7 @@ window.addEventListener('load', () => {
 
 // Add scroll reveal animations
 function revealOnScroll() {
-    const elements = document.querySelectorAll('.timeline-content, .project-card, .skill-item');
+    const elements = document.querySelectorAll('.experience-card, .project-card, .skill-item');
 
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
@@ -181,13 +181,13 @@ function revealOnScroll() {
 // Add CSS for reveal animations
 const style = document.createElement('style');
 style.textContent = `
-    .timeline-content, .project-card, .skill-item {
+    .experience-card, .project-card, .skill-item {
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.6s ease, transform 0.6s ease;
     }
     
-    .timeline-content.revealed, .project-card.revealed, .skill-item.revealed {
+    .experience-card.revealed, .project-card.revealed, .skill-item.revealed {
         opacity: 1;
         transform: translateY(0);
     }
